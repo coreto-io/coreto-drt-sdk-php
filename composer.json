@@ -1,9 +1,9 @@
 {
-    "name": "coreto/coreto-ledger-sdk",
-    "description": "An Laravel SDK used to interact with the Coreto Trust and Performance Ledger",
+    "name": "coreto/coreto-drt-sdk",
+    "description": "An Laravel SDK used to interact with the Coreto DRS",
     "type": "library",
     "keywords": ["php", "coreto", "did", "drs", "ledger", "trust", "performance", "laravel"],
-    "homepage": "https://github.com/coreto/coreto-ledger-sdk-php",
+    "homepage": "https://github.com/coreto-io/coreto-drt-sdk-php",
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +13,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Coreto\\CoretoLedgerSDK\\": "src/"
+            "Coreto\\CoretoDRTSDK\\": "src/"
         }
     },
     "extra": {
