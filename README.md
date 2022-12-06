@@ -1,6 +1,6 @@
-# Coreto Ledger SDK
+# Coreto DRT SDK
 
-An SDK used to interact with the Coreto Trust and Performance Ledger
+An Laravel SDK used to interact with the Coreto DRS
 
 ## Dependencies
 
@@ -11,7 +11,7 @@ An SDK used to interact with the Coreto Trust and Performance Ledger
 To install simply run:
 
 ```
-composer require coreto/coreto-ledger-sdk
+composer require coreto/coreto-drt-sdk
 ```
 
 Or add it to `composer.json` manually:
@@ -19,7 +19,7 @@ Or add it to `composer.json` manually:
 ```json
 {
     "require": {
-        "coreto/coreto-ledger-sdk": "~1"
+        "coreto/coreto-drt-sdk": "~1"
     }
 }
 ```
@@ -27,7 +27,7 @@ Or add it to `composer.json` manually:
 ## Direct usage
 
 ```php
-use Coreto\CoretoLedgerSDK\Client;
+use Coreto\CoretoDRTSDK\Client;
 
 $client = new Client(
   $apiUrl, // The base URL of the API

@@ -1,6 +1,6 @@
 <?php
 
-namespace Coreto\CoretoLedgerSDK;
+namespace Coreto\CoretoDRTSDK;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Client\Response;
@@ -37,7 +37,7 @@ class Client
     }
 
     public function saveActionsBatch($payload) {
-        $url = rtrim($this->apiUrl, '/') . '/ledger/save_actions_batch';
+        $url = rtrim($this->apiUrl, '/') . '/drt/save_actions_batch';
 
         $payload['caller_account_id'] = $this->callerAccountId;
         $payload['caller_private_key'] = $this->callerPrivateKey;
@@ -52,7 +52,7 @@ class Client
     }
 
     public function saveAction($payload) {
-        $url = rtrim($this->apiUrl, '/') . '/ledger/save_action';
+        $url = rtrim($this->apiUrl, '/') . '/drt/save_action';
 
         $payload['caller_account_id'] = $this->callerAccountId;
         $payload['caller_private_key'] = $this->callerPrivateKey;
@@ -67,7 +67,7 @@ class Client
     }
 
     public function getUserActions($payload) {
-        $url = rtrim($this->apiUrl, '/') . '/ledger/get_user_actions';
+        $url = rtrim($this->apiUrl, '/') . '/drt/get_user_actions';
 
         $response = Http::post($url, $payload);
 
@@ -79,7 +79,7 @@ class Client
     }
 
     public function getUserTrustActions($payload) {
-        $url = rtrim($this->apiUrl, '/') . '/ledger/get_user_trust_actions';
+        $url = rtrim($this->apiUrl, '/') . '/drt/get_user_trust_actions';
 
         $response = Http::post($url, $payload);
 
@@ -91,7 +91,7 @@ class Client
     }
 
     public function getUserPerformanceActions($payload) {
-        $url = rtrim($this->apiUrl, '/') . '/ledger/get_user_performance_actions';
+        $url = rtrim($this->apiUrl, '/') . '/drt/get_user_performance_actions';
 
         $response = Http::post($url, $payload);
 
@@ -103,7 +103,7 @@ class Client
     }
 
     public function getSourceActionTypes($payload) {
-        $url = rtrim($this->apiUrl, '/') . '/ledger/get_source_action_types';
+        $url = rtrim($this->apiUrl, '/') . '/drt/get_source_action_types';
 
         $response = Http::post($url, $payload);
 
